@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduccion a p5.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <style type="text/css">
+        h3
+        {
+            font-size: 25px !important;
+
+        }
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        ::before
+        <h3 class=" btn btn-primary">Introduccion a p5.js</h3>
+        <hr>
+        <label>Color del filtro</label>
+        <input id="color_name" placeholder = "introduce el color del filtro"> 
+        <br>
+        <br>
+        <button onclick="filter_tint()" class="btn btn-warning">Aplicar filtro</button>
+        <br>
+        <br>
+        <button onclick="take_snapshot()" class="btn btn-success">Tomar captura</button>
+        ::after
+    </div>
+    <script src="main.js"></script>  
+    <canvas id="defaultCanvas0" class="p5Canvas" width="1280" height="960" style="width: 640px; height: 480px; position: absolute; left: 110px; top: 250px;"></canvas>
+    <video playsinline crossorigin="anonymous" style="display: none;"></video>
+</body>
+</html>
